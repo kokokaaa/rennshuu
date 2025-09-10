@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>シンプルWebサイト</title>
+  <style>
+    /* リセット＆基本設定 */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #C0C0C0; /* 変更 */
+      color: #222; /* 文字色も見やすく調整 */
+      padding: 1rem;
+      text-align: center;
+      font-size: 1.8rem;
+    }
+
+    main {
+      flex: 1;
+      padding: 2rem;
+      color: #333333; /* 背景に合う濃いグレー */
+    }
+
+    main h2 {
+      margin-bottom: 1rem;
+      /* color: inherit; そのまま継承 */
+    }
+
+    footer {
+      background-color: #C0C0C0; /* 変更 */
+      color: #222; /* 文字色も見やすく調整 */
+      padding: 1rem;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #4CAF50;
+      margin: 0 0.5rem;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    やりたいゲーム（DS）
+  </header>
+
+  <main>
+    <h2>最近クリアしたゲーム</h2>
+    <p></p>
+
+    <h2>次にやりたいゲーム</h2>
+    <p></p>
+  </main>
+
+  <footer>
+    <div>連絡先: example@example.com</div>
+    <div>
+      ソーシャルメディア:
+      <a href="#" target="_blank" rel="noopener noreferrer">Twit_
